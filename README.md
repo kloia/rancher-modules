@@ -15,12 +15,12 @@ Rancher Management Server has got a api endpoints, this endpoints are containing
 
 Command of usage : 
 
-    * Connectivity with Rancher Server : 
+* Connectivity with Rancher Server : 
 ```
         $ chmod +x main.sh && ./main.sh ## You need to set your username and password
 ```
 
-    * Provisioning Level 
+* Provisioning Level 
 
 ```
         $ ansible-playbook -i hosts.ini -u USER site.yaml --private-key key
