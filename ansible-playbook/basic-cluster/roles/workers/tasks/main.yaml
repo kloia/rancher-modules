@@ -1,0 +1,12 @@
+---
+- name: SetupISCSI
+  shell: |
+    sudo apt-get update && apt-get install -y open-iscsi
+
+- name: SetupDocker
+  shell: |
+    curl https://get.docker.com > docker.sh
+    chmod +x docker.sh && ./docker.sh
+    
+- name: SetupWorkers
+  shell: |

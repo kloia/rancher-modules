@@ -1,0 +1,3 @@
+rancher:
+  server: RANCHER_SERVER
+  master_role_flag: '--etcd --controlplane'
