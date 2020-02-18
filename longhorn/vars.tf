@@ -10,3 +10,7 @@ variable "access_key" {
 variable "project_name" {
   default = ""
 }
+
+variable "management_server" {
+  ##https://rancher.mydomain.com
+}
