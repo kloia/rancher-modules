@@ -25,3 +25,12 @@ Command of usage :
 ```
         $ ansible-playbook -i hosts.ini -u USER site.yaml --private-key key
 ```
+
+## Terraform Links : 
+
+```
+$ wget https://releases.hashicorp.com/terraform/0.12.21/terraform_0.12.21_linux_amd64.zip
+$ unzip ZIP_FILE.zip
+
+```
+
