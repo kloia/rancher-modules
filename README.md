@@ -34,3 +34,14 @@ $ unzip ZIP_FILE.zip
 
 ```
 
+## Single Node Rancher Installation
+
+```
+docker run -d --restart=unless-stopped \
+	-p 80:80 -p 443:443 \
+	rancher/rancher:latest
+```
+
+```
+yum install iscsi-initiator-utils
+```
