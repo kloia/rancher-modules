@@ -57,5 +57,5 @@ stages:
 Rancher pipeline is using Jenkins for deployment process and than if you want to make Jenkins able to deploy cluster-wide you need to set cluster-role-binding to the related service account to Jenkins : 
 
 ```
-    $ kubectl create clusterrolebinding admin-binding-project --clusterrole cluster-admin --serviceaccount=p-xwtls-pipeline:jenkins || true
+    $ kubectl create clusterrolebinding admin-binding-project --clusterrole cluster-admin --serviceaccount=p-<project_id>-pipeline:jenkins || true
 ```
