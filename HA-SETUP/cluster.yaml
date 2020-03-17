@@ -1,0 +1,27 @@
+nodes:
+  - address: <CLUSTER_IP>
+    internal_address: <INTERNAL_IP>
+    user: ubuntu
+    ssh_key_path: ./key
+    role: [controlplane, etcd]
+  - address: <CLUSTER_IP>
+    internal_address: <INTERNAL_IP>
+    user: ubuntu
+    ssh_key_path: ./key
+    role: [worker]
+  - address: <CLUSTER_IP>
+    internal_address: <INTERNAL_IP>
+    user: ubuntu
+    ssh_key_path: ./key
+    role: [worker]
+
+services:
+  etcd:
+    snapshot: true
+    creation: 6h
+    retention: 24h
+
+ingress:
+  provider: nginx
+  options:
+    use-forwarded-headers: "true"

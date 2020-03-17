@@ -1,5 +1,13 @@
 ## SETUP
 
+Rancher is suggesting rke based HA setup for your environments. You should need to create a file at `cluster.yaml`
+### Requirements:
+* Internal Ip addresses
+* Private Keys !
+* You have to install docker on your instances
+* Ssh connected user needs to be already assign group of  <b>docker</b>
+
+# INSTALL RANCHER 
 
 ## Helm Setup
 
