@@ -1,0 +1,19 @@
+nodes:
+  - address: IP_FIRST_NODE
+    internal_address: IP_FIRST_NODE
+    user: USER_NAME_THAT_BIND_OF_DOCKER_GROUP
+    ssh_agent_auth: true
+    ssh_key_path: ./SSH_PRIVATE_KEY_PATH
+    role: [controlplane, etcd]
+    
+  - address: IP_SECOND_NODE
+    internal_address: IP_SECOND_NODE
+    user: USER_NAME_THAT_BIND_OF_DOCKER_GROUP
+    ssh_agent_auth: true
+    ssh_key_path: ./SSH_PRIVATE_KEY_PATH
+    role: [worker]
+
+ingress:
+  provider: nginx
+  options:
+    use-forwarded-headers: "true"
